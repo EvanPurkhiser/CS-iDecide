@@ -18,7 +18,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
+    // Keep track of the old button title
+    self.originalMagicBUttonTitle = self.magicButton.titleLabel.text;
 }
 
 - (void)didReceiveMemoryWarning
@@ -43,8 +45,9 @@
     // Set the button title, we will reset this on a timer
     [self.magicButton setTitle:response forState:UIControlStateNormal];
 
-
-
+- (void)resetButtonTitle
+{
+    [self.magicButton setTitle:self.originalMagicBUttonTitle forState:UIControlStateNormal];
 }
 
 @end
