@@ -1,11 +1,3 @@
-//
-//  iDecideViewController.m
-//  iDecide
-//
-//  Created by Michael Collard on 9/23/13.
-//  Copyright (c) 2013 collard. All rights reserved.
-//
-
 #import "iDecideViewController.h"
 #import <stdlib.h>
 
