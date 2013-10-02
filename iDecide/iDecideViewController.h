@@ -12,6 +12,7 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *magicButton;
 @property (strong, nonatomic) NSString *originalMagicBUttonTitle;
+@property (strong, nonatomic) NSTimer  *resetTimer;
 
 - (IBAction)makeDecision:(id)sender;
 

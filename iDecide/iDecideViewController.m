@@ -45,6 +45,15 @@
     // Set the button title, we will reset this on a timer
     [self.magicButton setTitle:response forState:UIControlStateNormal];
 
+    // Stop previous button reset timers
+    [self.resetTimer invalidate];
+
+    // Reset the button text in 5 seconds
+    self.resetTimer = [NSTimer scheduledTimerWithTimeInterval:5
+                                                     target:self selector:@selector(resetButtonTitle)
+                                                     userInfo:nil repeats:NO];
+}
+
 - (void)resetButtonTitle
 {
     [self.magicButton setTitle:self.originalMagicBUttonTitle forState:UIControlStateNormal];
