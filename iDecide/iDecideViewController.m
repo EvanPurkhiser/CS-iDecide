@@ -23,6 +23,15 @@
     self.originalMagicBUttonTitle = self.magicButton.titleLabel.text;
 }
 
+- (void) motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event
+{
+    // Magic 8 ball style shaking for a answer
+    if (motion == UIEventSubtypeMotionShake)
+    {
+        [self makeDecision:self];
+    }
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
