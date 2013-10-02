@@ -10,6 +10,8 @@
 
 @interface iDecideViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIButton *magicButton;
+
 - (IBAction)makeDecision:(id)sender;
 
 @end

@@ -37,12 +37,14 @@
                            @"My reply is no", @"My sources say no", @"Outlook not so good",
                            @"Very doubtful"];
 
+    // Get a random response. Let fate be with ye
     NSString *response = [responses objectAtIndex:arc4random_uniform(responses.count)];
 
+    // Set the button title, we will reset this on a timer
+    [self.magicButton setTitle:response forState:UIControlStateNormal];
 
-    NSLog(@"Response is: %@", response);
 
-    NSLog(@"Now computing decision from various factors");
+
 }
 
 @end

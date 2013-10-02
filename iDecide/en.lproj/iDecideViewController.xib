@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="iDecideViewController">
             <connections>
+                <outlet property="magicButton" destination="dkP-Kp-8fS" id="jAa-yL-JuS"/>
                 <outlet property="view" destination="6" id="7"/>
             </connections>
         </placeholder>
