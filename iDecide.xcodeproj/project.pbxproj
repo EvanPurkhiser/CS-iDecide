@@ -299,6 +299,7 @@
 				88BBC25A17F0B86000C22770 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
