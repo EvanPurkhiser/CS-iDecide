@@ -10,4 +10,6 @@
 
 @interface iDecideViewController : UIViewController
 
+- (IBAction)makeDecision:(id)sender;
+
 @end

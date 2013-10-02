@@ -26,4 +26,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)makeDecision:(id)sender
+{
+    NSLog(@"Now computing decision from various factors");
+}
+
 @end

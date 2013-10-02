@@ -21,6 +21,9 @@
                     <state key="normal" title="Magic iDevice, should I Decide?">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="makeDecision:" destination="-1" eventType="touchUpInside" id="zjs-0t-uOm"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
